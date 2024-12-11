@@ -1,4 +1,2 @@
-FROM ubuntu:latest
-LABEL authors="kirilllesniak"
-
-ENTRYPOINT ["top", "-b"]
+FROM elasticsearch:latest
+ENV discovery.type=single-node
